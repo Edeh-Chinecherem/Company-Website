@@ -4,9 +4,23 @@ body {
   background-color: #ffffff;
 }
 
-header,
+header {
+  background-image: url(img/header.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+}
+
+header p {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+}
 footer {
-  background-color: #ccac00;
+  background-color: #b5bb40;
   color: #ffffff;
   text-align: center;
   padding: 10px;
@@ -43,11 +57,53 @@ section {
   padding: 20px;
 }
 
+#companyInfo {
+  display: flex;
+  justify-content: space-around;
+}
+
+.identity {
+  max-width: 30%;
+  border: 1px solid #8a7300;
+  border-radius: 4px;
+  box-shadow: 10px 10px 15px rgba (0, 0, 0, 0.9);
+  margin: 5px;
+  text-align: justify;
+  padding: 5px;
+}
+
+.vision {
+  max-width: 30%;
+  border: 1px solid #8a7300;
+  border-radius: 4px;
+  box-shadow: 10px 10px 15px rgba (0, 0, 0, 0.9);
+  margin: 5px;
+  text-align: justify;
+  padding: 5px;
+}
+
+.mission {
+  max-width: 30%;
+  border: 1px solid #8a7300;
+  border-radius: 4px;
+  box-shadow: 10px 10px 15px rgba (0, 0, 0, 0.9);
+  margin: 5px;
+  text-align: justify;
+  padding: 5px;
+}
+
 h1 {
   color: #ffffff;
+  font-size: 40px;
 }
 h2 {
-  color: #ccac00;
+  color: #b5bb40;
+}
+
+p {
+  color: black;
+  font-size: 15px;
+  font-style: italic;
 }
 
 footer {
