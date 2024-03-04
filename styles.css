@@ -11,6 +11,14 @@ footer {
   text-align: center;
   padding: 10px;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -35,7 +43,9 @@ section {
   padding: 20px;
 }
 
-h1,
+h1 {
+  color: #ffffff;
+}
 h2 {
   color: #ccac00;
 }
