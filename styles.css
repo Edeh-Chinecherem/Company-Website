@@ -2,12 +2,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
   background-color: #ffffff;
+  padding: 0 20px;
 }
 
 header {
   background-image: url(img/header.jpg);
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   color: #ffffff;
   text-align: center;
@@ -18,19 +19,16 @@ header p {
   color: #ffffff;
   font-weight: bold;
   font-size: 20px;
+  text-align: center;
 }
+
 footer {
   background-color: #b5bb40;
   color: #ffffff;
   text-align: center;
   padding: 10px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+  font-size: 15px;
+  margin-top: 20px;
 }
 
 nav {
@@ -52,21 +50,72 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+h1 {
+  color: #ffffff;
+  font-size: 40px;
+}
+h2 {
+  color: #b5bb40;
+}
+
+h3 {
+  text-align: center;
+  color: #666666;
+}
+p {
+  color: black;
+  font-size: 15px;
+  font-style: italic;
+  text-align: justify;
+  max-width: 600px;
+}
 
 section {
   padding: 20px;
 }
 
+#titleBlock {
+  display: flex;
+  justify-content: space-between;
+  background-color: #b5bb40;
+}
+
+#introduction {
+  display: flex;
+  justify-content: space-between;
+}
+
 #companyInfo {
   display: flex;
   justify-content: space-around;
+  padding: 10px;
 }
 
+#service {
+  display: flex;
+  justify-content: space-around;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#servicesCtd {
+  display: flex;
+  justify-content: space-around;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#contactInfo {
+  background-color: #666666;
+  color: #ffffff;
+}
 .identity {
   max-width: 30%;
   border: 1px solid #8a7300;
   border-radius: 4px;
-  box-shadow: 10px 10px 15px rgba (0, 0, 0, 0.9);
+  box-shadow: 10px 10px 15px rgba (0, 0, 0, 0);
   margin: 5px;
   text-align: justify;
   padding: 5px;
@@ -76,7 +125,7 @@ section {
   max-width: 30%;
   border: 1px solid #8a7300;
   border-radius: 4px;
-  box-shadow: 10px 10px 15px rgba (0, 0, 0, 0.9);
+  box-shadow: 10px 10px 15px rgba (0, 0, 0, 0);
   margin: 5px;
   text-align: justify;
   padding: 5px;
@@ -86,27 +135,50 @@ section {
   max-width: 30%;
   border: 1px solid #8a7300;
   border-radius: 4px;
-  box-shadow: 10px 10px 15px rgba (0, 0, 0, 0.9);
+  box-shadow: 10px 10px 15px rgba (0, 0, 0, 0);
   margin: 5px;
   text-align: justify;
   padding: 5px;
 }
 
-h1 {
-  color: #ffffff;
-  font-size: 40px;
-}
-h2 {
-  color: #b5bb40;
-}
-
-p {
-  color: black;
-  font-size: 15px;
-  font-style: italic;
+.service-one {
+  max-width: 30%;
+  text-align: justify;
+  border: 2px #666666;
+  border-radius: 4px;
+  box-shadow: 10px 10px 10px rgba (0, 0, 0, 0);
+  padding: 10px;
 }
 
-footer {
-  font-size: 8px;
-  margin-top: 20px;
+.service-two {
+  max-width: 30%;
+  padding: 10px;
+  text-align: justify;
+  border: 2px #666666;
+  border-radius: 4px;
+  box-shadow: 10px 10px 10px rgba (0, 0, 0, 0);
+}
+.service-three {
+  max-width: 30%;
+  text-align: justify;
+  border: 2px #666666;
+  border-radius: 4px;
+  box-shadow: 10px 10px 10px rgba (0, 0, 0, 0);
+  padding: 10px;
+}
+.service-four {
+  max-width: 30%;
+  text-align: justify;
+  border: 2px #666666;
+  border-radius: 4px;
+  box-shadow: 10px 10px 10px rgba (0, 0, 0, 0);
+  padding: 10px;
+}
+.service-five {
+  max-width: 30%;
+  text-align: justify;
+  border: 2px #666666;
+  border-radius: 4px;
+  box-shadow: 10px 10px 10px rgba (0, 0, 0, 0);
+  padding: 10px;
 }
