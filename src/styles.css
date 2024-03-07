@@ -1,9 +1,10 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
   box-sizing: border-box;
   min-width: 200px;
+  background-color: #666;
 }
 
 header {
@@ -70,11 +71,16 @@ footer {
   margin: 50px 0;
 }
 
-#about-us-img {
+#aboutUsImg {
   display: flex;
   justify-content: space-between;
   margin-left: 80px;
   margin-right: 40px;
+}
+#aboutUsImg p {
+  margin-top: 70px;
+  text-align: center;
+  font-size: 20px;
 }
 
 #companyInfo {
@@ -103,6 +109,8 @@ footer {
 
 #contact {
   background-color: #3498db;
+  max-width: 100%;
+  margin-bottom: 0;
 }
 
 #contact h2 {
@@ -151,6 +159,10 @@ footer {
   text-align: center;
 }
 
+.about-paragraph {
+  margin: 20px;
+}
+
 .menu-btn {
   text-decoration: none;
   color: #fff;
@@ -167,7 +179,7 @@ footer {
   font-size: 25px;
 }
 
-.about-img {
+.about-us-img {
   margin-right: 30px;
 }
 
@@ -175,7 +187,9 @@ footer {
 .col-2,
 .col-3 {
   width: 300px;
-  height: fit-content;
+  font-size: 15px;
+  padding: 10px;
+  margin: 10px;
   border-radius: 4px;
   box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
 }
@@ -229,10 +243,7 @@ footer {
   color: #3498db;
   font-size: 20px;
 }
-.contact-details {
-  background-color: aquamarine;
-  z-index: 2;
-}
+
 .footer-tag {
   display: flex;
   justify-content: space-between;
