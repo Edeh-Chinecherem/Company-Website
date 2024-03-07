@@ -14,9 +14,6 @@ header {
 }
 
 nav {
-  display: flex;
-  justify-content: space-evenly;
-  background-color: #3498db;
   padding: 5px;
 }
 
@@ -30,17 +27,76 @@ h1 {
   font-size: 40px;
 }
 
-#home p {
-  text-align: center;
-  font-style: italic;
-  font-size: 25px;
+ul {
+  text-align: justify;
 }
 
-#home a {
+img {
+  max-width: 600px;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 70px;
+}
+
+#home {
+  margin: 50px 0;
+}
+
+#companyInfo {
+  display: flex;
+  justify-content: space-around;
+  margin: 70px;
+}
+#commitment,
+#vision,
+#mission {
+  width: 200px;
+  border-radius: 4px;
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  font-size: 15px;
+}
+
+#values {
+  margin: 40px;
+}
+
+#services {
+  display: flex;
+  justify-content: space-around;
+}
+
+#contact {
+  background-color: #3498db;
+}
+
+#contact h2 {
+  text-align: center;
+}
+
+#contact p {
+  text-align: center;
+}
+
+.about-nav {
   text-decoration: none;
-  color: #fff;
+  color: #3498db;
   background-color: navy;
-  border: 1px solid #3498db;
+  border-radius: 24px;
+  padding: 15px;
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact-nav {
+  text-decoration: none;
+  color: navy;
+  background-color: #3498db;
   border-radius: 24px;
   padding: 15px;
   box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
@@ -55,25 +111,15 @@ h1 {
   color: #fff;
 }
 
-#home {
-  background-color: url(img/audacity.jpg);
+.home-page h2 {
+  text-align: center;
+  color: #3498db;
 }
 
-#companyInfo {
-  display: flex;
-  justify-content: space-around;
-}
-#vision,
-#mission {
-  width: 200px;
-  border-radius: 4px;
-  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
-  padding: 10px;
-}
-
-#services {
-  display: flex;
-  justify-content: space-around;
+.home-page p {
+  text-align: center;
+  font-style: italic;
+  font-size: 25px;
 }
 
 .col-1,
@@ -85,16 +131,18 @@ h1 {
   box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-#contact {
-  background-color: #3498db;
+.services {
+  margin: 40px;
 }
 
-#contact h2 {
+.services h2 {
   text-align: center;
+  margin-bottom: 30px;
 }
 
-#contact p {
-  text-align: center;
+.contact {
+  margin: 40px;
+  padding: 20px;
 }
 
 footer {
