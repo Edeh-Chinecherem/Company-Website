@@ -3,7 +3,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  min-width: 200px;
   background-color: #666;
 }
 
@@ -54,6 +53,34 @@ iframe {
   margin-top: 30px;
 }
 
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+button {
+  background-color: navy;
+  color: #3498db;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3498db;
+  color: navy;
+}
+
 footer {
   background-color: navy;
   color: #fff;
@@ -88,23 +115,9 @@ footer {
   justify-content: space-around;
   margin: 70px;
 }
-#commitment,
-#vision,
-#mission {
-  width: 200px;
-  border-radius: 4px;
-  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
-  padding: 10px;
-  font-size: 15px;
-}
 
 #values {
   margin: 40px;
-}
-
-#services {
-  display: flex;
-  justify-content: space-around;
 }
 
 #contact {
@@ -127,40 +140,9 @@ footer {
   margin: 20px;
 }
 
-.about-contact {
-  text-decoration: none;
-  color: navy;
-  background-color: #3498db;
-  border-radius: 24px;
-  margin-top: 30px;
-  padding: 15px;
-  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-.about-nav {
-  text-decoration: none;
-  color: #3498db;
-  background-color: navy;
-  border-radius: 24px;
-  padding: 15px;
-  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-.contact-nav {
-  text-decoration: none;
-  color: navy;
-  background-color: #3498db;
-  border-radius: 24px;
-  padding: 15px;
-  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-.about h2 {
-  text-align: center;
-}
-
-.about-paragraph {
-  margin: 20px;
+.menu {
+  display: flex;
+  justify-content: space-between;
 }
 
 .menu-btn {
@@ -183,13 +165,65 @@ footer {
   margin-right: 30px;
 }
 
-.col-1,
-.col-2,
-.col-3 {
-  width: 300px;
-  font-size: 15px;
+.about-contact {
+  text-decoration: none;
+  color: navy;
+  background-color: #3498db;
+  border-radius: 24px;
+  margin-top: 30px;
+  padding: 15px;
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.about h2 {
+  text-align: center;
+}
+
+.about-paragraph {
+  margin: 20px;
+}
+
+.about-nav {
+  text-decoration: none;
+  color: #3498db;
+  background-color: navy;
+  border-radius: 24px;
+  padding: 15px;
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact-nav {
+  text-decoration: none;
+  color: navy;
+  background-color: #3498db;
+  border-radius: 24px;
+  padding: 15px;
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.company-section {
+  flex: 1;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
   padding: 10px;
-  margin: 10px;
+  font-size: 15px;
+}
+
+.contact-map-form {
+  display: flex;
+  justify-content: space-around;
+}
+
+.service-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.service-column {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
   border-radius: 4px;
   box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
 }
@@ -208,33 +242,14 @@ footer {
   padding: 20px;
 }
 
-.contact-address {
+.contact-info {
   border: 1px solid #fff;
   border-radius: 8px;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
-  margin: 10px;
   padding: 10px;
-  max-width: 300px;
 }
 
-.contact-number {
-  border: 1px solid #fff;
-  border-radius: 8px;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
-  margin: 10px;
-  padding: 10px;
-  max-width: 300px;
-}
-.contact-email {
-  border: 1px solid #fff;
-  border-radius: 8px;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
-  margin: 10px;
-  padding: 10px;
-  max-width: 300px;
-}
-
-.inquiry {
+.contact-inquiry {
   text-align: center;
   font-weight: bold;
   font-size: 35px;
@@ -247,4 +262,27 @@ footer {
 .footer-tag {
   display: flex;
   justify-content: space-between;
+}
+
+.footer-column h1 {
+  text-align: left;
+}
+
+.footer-column p {
+  text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  .service-container {
+    flex-direction: column;
+  }
+  .company-section {
+    flex-direction: column;
+  }
+  #contactDetails {
+    flex-direction: column;
+  }
+  .contact-map-form {
+    flex-direction: column;
+  }
 }
