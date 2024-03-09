@@ -173,14 +173,14 @@ footer {
   text-decoration: none;
   color: #fff;
 }
-
-.home-page h2 {
+.home-page {
   text-align: center;
+}
+.home-page h2 {
   color: #3498db;
 }
 
 .home-page p {
-  text-align: center;
   font-style: italic;
   font-size: 25px;
 }
@@ -207,7 +207,7 @@ footer {
   margin: 20px;
 }
 .about-button {
-  margin-left: 500px;
+  display: inline-block;
   width: 100px;
   text-decoration: none;
   color: #3498db;
@@ -218,12 +218,12 @@ footer {
 }
 
 .about-button:hover {
-  background-color: #3498db;
+  background-color: #70c6ff;
   color: navy;
 }
 
 .contact-button {
-  margin-left: 200px;
+  display: inline-block;
   width: 100px;
   text-decoration: none;
   color: navy;
