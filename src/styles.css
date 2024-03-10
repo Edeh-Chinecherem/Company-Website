@@ -183,6 +183,10 @@ footer {
   color: #3498db;
 }
 
+.about-section-description h3 {
+  font-size: 25px;
+}
+
 .about-contact-button {
   display: inline-block;
   text-decoration: none;
@@ -246,6 +250,10 @@ footer {
   font-size: 15px;
 }
 
+.company-section h3 {
+  font-size: 20px;
+}
+
 .map-container {
   border: 40px solid #3498db;
   border-radius: 10px;
@@ -272,10 +280,18 @@ footer {
   box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
 }
 
+.service-column h3 {
+  font-size: 20px;
+}
+
 .col-1,
 .col-2,
 .col-3 {
   margin: 5px;
+}
+
+.company-values h2 {
+  font-size: 30px;
 }
 
 .services {
