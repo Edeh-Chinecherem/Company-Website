@@ -234,13 +234,10 @@ footer {
 
 .company-section {
   flex: 1;
-  width: 300px;
-  height: 200px;
   text-align: center;
   border-radius: 4px;
   box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
-  padding: 10px;
-  font-size: 15px;
+  padding: 20px;
 }
 
 .company-section h3 {
@@ -317,6 +314,7 @@ footer {
 }
 
 .contact-info {
+  flex: 1;
   width: 300px;
   text-align: center;
   background-color: #fff;
@@ -366,13 +364,12 @@ footer {
     flex-direction: column;
     margin: 10px;
   }
-
   .map-container {
     display: block;
     margin: 10px auto;
   }
-
   .contact-form {
+    flex-direction: column;
     display: block;
     margin: 10px auto;
   }
