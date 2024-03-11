@@ -439,4 +439,25 @@ footer {
     margin: 20px auto;
     width: 300px;
   }
+  .map-container {
+    width: 200px;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  iframe {
+    width: 200px;
+  }
+
+  .contact-form {
+    width: 200px;
+  }
+
+  .about-img {
+    width: 300px;
+    display: block;
+    margin: 10px auto;
+  }
 }
