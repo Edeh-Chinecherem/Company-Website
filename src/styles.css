@@ -164,11 +164,6 @@ nav li:first-child {
   text-align: center;
 }
 
-#aboutUsImg {
-  display: flex;
-  justify-content: space-around;
-}
-
 #companyInfo {
   display: flex;
   justify-content: space-evenly;
@@ -208,17 +203,27 @@ nav li:first-child {
   font-size: 25px;
 }
 
-.about-us-img {
-  margin-right: 30px;
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
 }
 
+.about-section-img,
 .about-section-paragraph {
-  width: 500px;
-  margin-top: 50px;
-  text-align: center;
-  font-size: 20px;
+  flex-basis: 48%;
 }
 
+.about-us-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-section-description {
+  text-align: justify;
+  padding: 20px;
+}
 .about-section-paragraph h2 {
   color: #3498db;
 }
@@ -432,19 +437,7 @@ nav li:first-child {
   .contact-map-form {
     flex-direction: column;
   }
-  .about-section {
-    flex-direction: column;
-  }
 
-  .about-section img {
-    display: block;
-    margin: 0 auto;
-  }
-
-  .about-section-paragraph {
-    display: block;
-    margin: 0 auto;
-  }
   .company-info {
     flex-direction: column;
   }
@@ -456,23 +449,23 @@ nav li:first-child {
   .hide-on-mobile {
     display: none;
   }
+
   .about-section {
     flex-direction: column;
   }
 
-  .about-section img {
-    display: block;
-    margin: 20px auto;
+  .about-section-img,
+  .about-section-paragraph {
+    flex-basis: 100%;
   }
 
-  .about-section-paragraph h2 {
-    display: block;
-    margin: 20px auto;
+  .about-us-img {
+    margin-bottom: 20px;
   }
 
-  .about-section-paragraph p {
-    display: block;
-    margin: 20px auto;
+  .about-section-description {
+    text-align: left;
+    padding: 10px;
   }
 }
 
@@ -480,21 +473,7 @@ nav li:first-child {
   .sidebar {
     width: 100%;
   }
-  .about-section img {
-    width: 300px;
-    display: block;
-    margin: 20px auto;
-  }
 
-  .about-section-paragraph h2 {
-    display: block;
-    margin: 20px auto;
-  }
-  .about-section-paragraph p {
-    display: block;
-    margin: 20px auto;
-    width: 300px;
-  }
   .map-container {
     width: 200px;
   }
