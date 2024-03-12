@@ -7,14 +7,6 @@ body {
 header {
   background-color: navy;
   color: #fff;
-  text-align: center;
-  padding: 10px;
-}
-ul {
-  list-style: none;
-}
-nav a {
-  text-decoration: none;
 }
 
 h1 strong {
@@ -33,7 +25,12 @@ h3 {
 }
 
 ul {
-  text-align: justify;
+  list-style: none;
+}
+
+span a {
+  text-decoration: none;
+  color: #fff;
 }
 
 img {
@@ -92,14 +89,75 @@ footer {
   text-align: center;
 }
 
-#header {
+nav {
+  background-color: navy;
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
+}
+nav ul {
+  width: 100%;
+  list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+  height: 100px;
+}
+
+nav h1 {
+  color: #fff;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+nav li:first-child {
+  margin-right: auto;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: #e0e0e0;
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar a {
+  width: 100%;
+  color: black;
+}
+
+.sidebar {
+  display: none;
+}
+
+.menu-button {
+  display: none;
 }
 
 #home {
   margin: 50px 0;
-  background-color: url(img/introduction.png);
 }
 
 #aboutContact {
@@ -138,17 +196,6 @@ footer {
   color: black;
 }
 
-.navbar {
-  display: flex;
-  gap: 20px;
-  align-content: center;
-  margin-top: 30px;
-}
-
-.menu-btn {
-  text-decoration: none;
-  color: #fff;
-}
 .home-page {
   text-align: center;
 }
@@ -403,6 +450,12 @@ footer {
   }
 }
 @media screen and (max-width: 800px) {
+  .menu-button {
+    display: block;
+  }
+  .hide-on-mobile {
+    display: none;
+  }
   .about-section {
     flex-direction: column;
   }
@@ -424,6 +477,9 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+  .sidebar {
+    width: 100%;
+  }
   .about-section img {
     width: 300px;
     display: block;
