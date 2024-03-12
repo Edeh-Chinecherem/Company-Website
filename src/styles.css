@@ -467,6 +467,16 @@ nav li:first-child {
     text-align: left;
     padding: 10px;
   }
+
+  .footer-tag {
+    flex-direction: column;
+  }
+  .footer-column {
+    text-align: left;
+  }
+  .footer-column h2 {
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 500px) {
